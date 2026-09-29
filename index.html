@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.o">
+        <title>Organizador Escolar</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                logo
+            </div>
+            <nav>
+                <a href="#inicio">INICIO</a>
+                <a href="#tareas">TAREAS</a>
+                <a href="#materias">MATERIAS</a>
+            </nav>
+            <button id="modoOscuro"></button>
+        </header>
+        <main>
+            INICIO
+            <section id="inicio" class="hero">
+                <div>
+                    <p class="saludo"> Hola, estudiante</p>
+                    <h1>
+                        Organiza tu escuela
+                        <span>en un solo lugar</span>
+                    </h1>
+                    <p class="descripción">
+                        Este organizador escolar te ayuda a organizar tareas, materias y fechas de entregas para que no te 
+                        olvides de nada.
+                    </p>
+                    <a href="#tareas" class="boton">
+                        ver mis tareas
+                    </a>
+                </div>
+                <div class="tarjeta-resumen">
+                    <h3>Resumen</h3>
+                    <div class="estadistica">
+                        <span>Pendientes</span>
+                        <strong id="Pendientes">0</strong>
+                    </div>
+                    <div class="estadisticas">
+                        <span>Completadas</span>
+                            <strong id="Completadas">0</strong>
+                    </div>
+                </div>
+            </section>
+            TAREAS
+            <section id="tareas" class="seccion">
+                <div class="titulo-seccion">
+                </div>
+                    <p class="mini-titulo">ORGANIZACION</p>
+                    <h2>Mis tareas</h2>
+                </div>
+                FORMULARIO
+                <form id="formularioTarea" class="formulario">
+                    <input
+                    type="text"
+                    id="nombreTarea"
+                    placeholder="ej: trabajo matematicas"
+                    required
+                    >
+                    <select id="materiaTarea" required>
+                        <option value="">
+                            Selecciona una materia
+                        </option>
+                        <option value="matematica">
+                            Matematica
+                        </option>
+                        <option value="Lengua">
+                            Lengua
+                        </option>
+                        <option value="Ingles">
+                            Ingles
+                        </option>
+                        <option value="programacion">
+                            Programacion
+                        </option>
+                        <option value="Redes">
+                            Redes
+                        </option>
+                        <option value="formacion etica">
+                            Formacion Etica
+                        </option>
+                        <option value="proyecto tecnologico">
+                            Proyecto Tecnologico
+                        </option>
+                        <option value="hardware">
+                            Hardware
+                        </option>
+                        <option value="Organizacion y gestion">
+                            Organizacion y gestion 
+                            </option>
+                            <option value="software">
+                                Software
+                            </option>
+                    </select>
+                    <input
+                    type="date"
+                    id="fechaTarea"
+                    required
+                    >
+                    <button type="submit">
+                        Agregar tarea
+                    </button>
+                </form>
+                FILTROS
+                <div class="filtros">
+                    <button class="filtro activo" data-filtro="todas">
+                        Todas
+                    </button>
+                    <button class="filtro" data-filtro="Pendientes">
+                        Pendientes
+                    </button>
+                    <button class="filtro" data-filtro="Completadas">
+                        Completadas
+                    </button>
+                </div>
+                LISTA
+                <div id="listaTareas" class="lista-tareas">
+                    <p id="mensajevacio" class="mensaje-vacio">
+                        Todavia no tenes tareas agregadas
+                    </p>
+                </div>
+            </section>
+            MATERIAS
+            <section id="materias" class="seccion-materias">
+                <div class="titulo-seccion">
+                    <p class="mini-titulo">MIS CLASES</p>
+                    <h2>Materias</h2>
+                </div>
+                <div class="grid-materias">
+                    <div class="materia">
+                    <h3>Matematica</h3>
+                    </div>
+                    <div class="materia">
+                        <h3>Lengua</h3>
+                    </div>
+                    <div class="materia">
+                        <h3>Ingles</h3>
+                    </div>
+                    <div class="materia">
+                        <h3>Software</h3>
+                    </div>
+                    <div class="materia">
+                        <h3>Hardware</h3>
+                    </div>
+                    <div class="materia">
+                        <h3>Formacion Etica</h3>
+                    </div>
+                    <div class="materia">
+                        <h3>Organizacion y gestion</h3>
+                    </div>
+                    <div class="materia">
+                        <h3>proyecto tecnologico</h3>
+                    </div>
+                    <div class="materia">
+                        <h3>Programacion</h3>
+                    </div>
+                    <div class="materia">
+                        <h3>Redes</h3>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h3>Organizador escolar</h3>
+            <p>
+                Organizarse tambien es una forma de estudiar
+            </p>
+            <p class="copyright">
+                Proyecto escolar
+            </p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
